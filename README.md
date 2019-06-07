@@ -1,6 +1,6 @@
 # remote-development-firebase
 
-## Use software
+## Software to use
 
 - Visual Studio Code ^1.35
   - Extension: Remote - Containers
