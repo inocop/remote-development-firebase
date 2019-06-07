@@ -1,0 +1,20 @@
+version: '2.2'
+services:
+  node:
+    build: .
+    working_dir: /opt/remote-development-firebase
+    ports:
+      - "5000:5000"
+      - "9005:9005"
+    volumes:
+      - .:/opt/remote-development-firebase
+      - myapp_node_modules:/opt/remote-development-firebase/src/myapp/node_modules
+      - functions_node_modules:/opt/remote-development-firebase/src/functions/node_modules
+      - ~/.gitconfig:/root/.gitconfig
+    command: tail -f /dev/null
+
+volumes:
+  myapp_node_modules:
+    driver: 'local'
+  functions_node_modules:
+    driver: 'local'

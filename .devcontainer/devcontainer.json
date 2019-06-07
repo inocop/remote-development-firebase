@@ -1,0 +1,15 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+  "name": "remote development firebase",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "node",
+  "workspaceFolder": "/opt/remote-development-firebase",
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ],
+  //"postCreateCommand": "npm install",
+  "shutdownAction": "stopCompose", // or "none"
+  "settings": {}
+}
