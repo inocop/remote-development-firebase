@@ -1,6 +1,23 @@
 # remote-development-firebase
 
-## Setup Firebase Project
+## Use software
+
+- Visual Studio Code ^1.35
+  - Extension: Remote - Containers
+- Docker
+
+## Start remote development
+
+```sh
+$ git clone https://github.com/inocop/remote-development-firebase.git
+$ code remote-development-firebase
+```
+
+Command palette
+>Remote-Containers: Reopen Folder in Container
+
+
+## Create firebase project
 
 ```sh
 $ pwd
