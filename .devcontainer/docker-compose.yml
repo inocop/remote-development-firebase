@@ -7,7 +7,7 @@ services:
       - "5000:5000"
       - "9005:9005"
     volumes:
-      - .:/opt/remote-development-firebase
+      - ../:/opt/remote-development-firebase
       - myapp_node_modules:/opt/remote-development-firebase/src/myapp/node_modules
       - functions_node_modules:/opt/remote-development-firebase/src/functions/node_modules
       - ~/.gitconfig:/root/.gitconfig
