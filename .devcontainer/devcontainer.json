@@ -2,7 +2,8 @@
 {
   "name": "remote development firebase",
   "dockerComposeFile": [
-    "docker-compose.yml"
+    "../docker-compose.yml",
+    "docker-compose.extend.yml"
   ],
   "service": "node",
   "workspaceFolder": "/opt/remote-development-firebase",
